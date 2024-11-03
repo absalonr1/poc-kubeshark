@@ -1,4 +1,4 @@
-# poc-kubeshark con servicios locales en rancher-dsktop
+# poc-kubeshark con servicios locales en rancher-desktop
 
 
 POC:
