@@ -34,4 +34,9 @@ net.ipv4.ip_unprivileged_port_start = 80
 $echo "net.ipv4.ip_unprivileged_port_start=0" | sudo tee -a /etc/sysctl.conf 
 sudo sysctl -p  
 ```
+# kubeshark
 
+```
+$ brew install kubeshark
+$ kubeshark tap
+```
