@@ -6,7 +6,7 @@ const app = express();
 const port = 3001;
 
 // Configuración de MongoDB Atlas
-const mongoUri = 'mongodb+srv://luisopazo:ilq3DPXc5pDoheLq@cluster0.85ruh.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0'; //process.env.MONGO_URI;
+const mongoUri = 'mongodb+srv://luisopazo:xx@cluster0.85ruh.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0'; //process.env.MONGO_URI;
 
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
