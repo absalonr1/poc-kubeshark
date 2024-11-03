@@ -1,0 +1,30 @@
+docker build -t service1:latest ./service1
+docker build -t service2:latest ./service2
+
+docker run -p 3001:3001 service2:latest
+curl http://localhost:3001/value
+
+
+
+nerdctl load -i service1:latest
+nerdctl load -i service2:latest
+
+kubectl apply -f k8s/mongo-secret.yaml
+kubectl apply -f k8s/service2-deployment.yaml
+kubectl apply -f k8s/service1-deployment.yaml
+kubectl apply -f k8s/ingress.yaml
+
+# /etc/hosts (para pruebas locales) 
+127.0.0.1 service1.localhost
+
+http://service1.localhost/get-value
+
+echo -n 'mongodb+srv://user:password@cluster.mongodb.net/testdb' | base64
+
+echo -n 'mongodb+srv://luisopazo:ilq3DPXc5pDoheLq@cluster0.85ruh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' | base64
+
+bW9uZ29kYitzcnY6Ly9sdWlzb3Bhem86aWxxM0RQWGM1cERvaGVMcUBjbHVzdGVyMC44NXJ1aC5t
+b25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9Q2x1c3RlcjA=
+
+luisopazo
+ilq3DPXc5pDoheLq

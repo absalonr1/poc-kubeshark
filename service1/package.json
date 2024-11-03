@@ -1,0 +1,14 @@
+{
+    "name": "service1",
+    "version": "1.0.0",
+    "description": "First service that calls service2",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "axios": "^0.21.1"
+    }
+  }
+  
