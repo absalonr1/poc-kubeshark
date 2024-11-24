@@ -21,3 +21,7 @@ http://service1.localhost/get-value
 
 echo -n 'mongodb+srv://user:password@cluster.mongodb.net/testdb' | base64
 
+# Tools
+
+
+

@@ -40,3 +40,10 @@ sudo sysctl -p
 $ brew install kubeshark
 $ kubeshark tap
 ```
+
+
+# Tools
+
+```
+kubectl run -it tool --image=praqma/network-multitool -- /bin/bash
+```
